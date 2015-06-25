@@ -129,13 +129,13 @@ function initWorker() {
       outputElement.textContent = "Worker has received command\n";
     } else if (message.type == "done") {
       stopRunning();
-      var buffers = message.data;
+      /*var buffers = message.data;
       if (buffers.length) {
         outputElement.className = "closed";
       }
       buffers.forEach(function(file) {
         filesElement.appendChild(getDownloadLink(file.data, file.name));
-      });
+      });*/
     }
   };
 }
